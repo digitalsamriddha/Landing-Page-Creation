@@ -1,0 +1,4 @@
+const steps = ["Fill out the short form with your business details.", "Book your free one-to-one consultation call.", "Receive a customized AI marketing strategy for your business."];
+export function Process() {
+  return <section className="border-y border-white/10 bg-[#101426] py-16 text-white sm:py-24"><div className="section-wrap"><div className="mx-auto max-w-2xl text-center"><p className="eyebrow">Simple process</p><h2 className="mt-5 text-3xl font-extrabold tracking-tight sm:text-5xl">Consultation Process</h2></div><div className="mx-auto mt-12 grid max-w-5xl gap-8 md:grid-cols-3">{steps.map((step, index) => <div key={step} className="relative border-t border-white/20 pt-6"><span className="text-sm font-bold text-indigo-300">STEP 0{index + 1}</span><p className="mt-4 text-lg font-semibold leading-7 text-white/90">{step}</p></div>)}</div></div></section>;
+}

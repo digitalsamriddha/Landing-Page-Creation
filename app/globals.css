@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { @apply bg-[#090B14] text-slate-100 antialiased; }
+* { box-sizing: border-box; }
+::selection { @apply bg-indigo-400 text-white; }
+@layer components {
+  .eyebrow { @apply inline-flex items-center rounded-full border border-indigo-400/25 bg-indigo-400/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-indigo-300; }
+  .section-wrap { @apply mx-auto w-full max-w-6xl px-5 sm:px-8; }
+  .primary-button { @apply inline-flex min-h-14 items-center justify-center rounded-2xl bg-brand px-7 text-center text-base font-bold text-white shadow-lg shadow-indigo-500/25 transition hover:-translate-y-0.5 hover:bg-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/30; }
+}
