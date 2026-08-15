@@ -11,3 +11,36 @@ body { @apply bg-[#090B14] text-slate-100 antialiased; }
   .section-wrap { @apply mx-auto w-full max-w-6xl px-5 sm:px-8; }
   .primary-button { @apply inline-flex min-h-14 items-center justify-center rounded-2xl bg-brand px-7 text-center text-base font-bold text-white shadow-lg shadow-indigo-500/25 transition hover:-translate-y-0.5 hover:bg-indigo-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/30; }
 }
+
+/* Presentation-only overrides for the embedded Flodesk form. */
+.flodesk-embed [data-ff-el="root"].ff-6a7611818a167a70cc4e6dec .ff-6a7611818a167a70cc4e6dec__container {
+  max-width: none !important;
+  border-radius: 1.4rem;
+  background: #0c1020 !important;
+}
+.flodesk-embed [data-ff-el="root"].ff-6a7611818a167a70cc4e6dec .ff-6a7611818a167a70cc4e6dec__form {
+  padding: 1.5rem !important;
+  color: #e2e8f0 !important;
+}
+.flodesk-embed [data-ff-el="root"].ff-6a7611818a167a70cc4e6dec .ff-6a7611818a167a70cc4e6dec__title,
+.flodesk-embed [data-ff-el="root"].ff-6a7611818a167a70cc4e6dec .ff-6a7611818a167a70cc4e6dec__subtitle { display: none !important; }
+.flodesk-embed [data-ff-el="root"].ff-6a7611818a167a70cc4e6dec .ff-6a7611818a167a70cc4e6dec__field { margin-bottom: 1rem !important; }
+.flodesk-embed [data-ff-el="root"].ff-6a7611818a167a70cc4e6dec .ff-6a7611818a167a70cc4e6dec__control {
+  color: #fff !important;
+  border: 1px solid rgba(255,255,255,.12) !important;
+  border-radius: .75rem !important;
+  background: #111627 !important;
+}
+.flodesk-embed [data-ff-el="root"].ff-6a7611818a167a70cc4e6dec .ff-6a7611818a167a70cc4e6dec__label { color: #cbd5e1 !important; }
+.flodesk-embed [data-ff-el="root"].ff-6a7611818a167a70cc4e6dec .ff-6a7611818a167a70cc4e6dec__button {
+  border: 0 !important;
+  border-radius: 1rem !important;
+  background: #4f46e5 !important;
+  font-weight: 700 !important;
+  transition: background .2s ease, transform .2s ease !important;
+}
+.flodesk-embed [data-ff-el="root"].ff-6a7611818a167a70cc4e6dec .ff-6a7611818a167a70cc4e6dec__button:hover { background: #6366f1 !important; transform: translateY(-1px); }
+.flodesk-embed [data-ff-el="root"].ff-6a7611818a167a70cc4e6dec .ff-6a7611818a167a70cc4e6dec__success-message { color: #e2e8f0 !important; }
+@media (min-width: 640px) {
+  .flodesk-embed [data-ff-el="root"].ff-6a7611818a167a70cc4e6dec .ff-6a7611818a167a70cc4e6dec__form { padding: 1.75rem !important; }
+}
