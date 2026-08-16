@@ -32,7 +32,7 @@ export function CTAForm() {
       if (root) {
         observer = new MutationObserver(() => {
           if (root.dataset.ffStage !== "success" || redirectTimer) return;
-          redirectTimer = window.setTimeout(() => window.location.assign("/thanks"), 1500);
+          redirectTimer = window.setTimeout(() => window.location.assign("/thank-you"), 1500);
         });
         observer.observe(root, { attributes: true, attributeFilter: ["data-ff-stage"] });
       }
